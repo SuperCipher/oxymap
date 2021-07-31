@@ -1,7 +1,23 @@
-# Google Maps JavaScript API Sample Application
+# Open source Nonprofit oxygen supplier maps website
 
-This sample is generated from @googlemaps/js-samples located at
-https://github.com/googlemaps/js-samples.
+## Goal
+
+Curate a list of oxygen supplier and present them in an easy to choose, locate and navigate on a map.
+
+## MVP check list
+
+- [ ] Aggregates all the supplier information
+- [ ] Add "View place on google map" link to maker accessibility
+
+## Production check list
+
+- [ ] add Term Of Use
+- [ ] add Contact
+
+## Contribution guidelines
+
+[Commit convention](https://gist.github.com/SuperCipher/f604668821f84663765491f6ece61370)
+
 
 ## Setup
 
@@ -19,4 +35,4 @@ can be replaced by following these instructions to
 ## Feedback
 
 For feedback related to this sample, please open a new issue on
-[GitHub](https://github.com/googlemaps/js-samples/issues).
+[GitHub](https://github.com/SuperCipher/oxymap).
