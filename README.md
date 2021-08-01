@@ -13,6 +13,7 @@ Curate a list of oxygen supplier and present them in an easy to choose, locate a
 
 - [ ] add Term Of Use
 - [ ] add Contact
+- [ ] Open graph API
 
 ## Contribution guidelines
 
