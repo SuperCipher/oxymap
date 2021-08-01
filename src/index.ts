@@ -50,7 +50,8 @@ function initMap(): void {
         '<div>' +
           `<p>${address}</p>`+
           '<h3>'+
-            `<a href="tel:${phoneNumber}">${phoneNumber}</a>` +
+          // TODO change to list of string
+            `<a href="tel:${phoneNumber[0]}">${phoneNumber[0]}</a>` +
           '</h3>'+
           '<h3>'+
             `<a href="https://www.google.com/maps/search/?api=1&query=${name}&query_place_id=${placeId}" target="_blank" rel="noopener noreferrer">` +
