@@ -64,6 +64,6 @@ function initMap(): void {
   });
 }
 
-
+console.info('bug report at https://github.com/SuperCipher/oxymap/issues')
 
 export { initMap };
