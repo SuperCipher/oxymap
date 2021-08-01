@@ -6,8 +6,8 @@ Curate a list of oxygen supplier and present them in an easy to choose, locate a
 
 ## MVP check list
 
-- [ ] Aggregates all the supplier information
-- [ ] Add "View place on google map" link to maker accessibility
+- [x] Aggregates all the supplier information
+- [x] Add "View place on google map" link to maker accessibility
 
 ## Production check list
 
