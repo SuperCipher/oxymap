@@ -23,7 +23,7 @@ function initMap(): void {
   const map = new google.maps.Map(
     document.getElementById("map") as HTMLElement,
     {
-      zoom: 12,
+      zoom: 10,
       center: { lat: 13.8146038, lng: 100.5960651 }
     }
   );
@@ -33,7 +33,7 @@ function initMap(): void {
   const infoWindow = new google.maps.InfoWindow();
 
   // Create the markers.
-  a.forEach(([position, name, address, phoneNumber, placeId], i) => {
+  a.forEach(([position, name, address, phoneNumber, placeId, details], i) => {
     const marker = new google.maps.Marker({
       position,
       map,
