@@ -33,22 +33,37 @@ function initMap(): void {
   const infoWindow = new google.maps.InfoWindow();
 
   // Create the markers.
-  a.forEach(([position, Name, googleMapUrl], i) => {
+  a.forEach(([position, name, address, phoneNumber, placeId], i) => {
     const marker = new google.maps.Marker({
       position,
       map,
-      title: `${Name}. `,
-      label: `${Name}`,
+      title: `${name}`,
+      label: `${name}`,
       optimized: false
     });
 
     // Add a click listener for each marker, and set up the info window.
     marker.addListener("click", () => {
       infoWindow.close();
-      infoWindow.setContent(marker.getTitle());
+      const contentString =
+        `<h1>${name}</h1>` +
+        '<div>' +
+          `<p>${address}</p>`+
+          '<h3>'+
+            `<a href="tel:${phoneNumber}">${phoneNumber}</a>` +
+          '</h3>'+
+          '<h3>'+
+            `<a href="https://www.google.com/maps/search/?api=1&query=${name}&query_place_id=${placeId}" target="_blank" rel="noopener noreferrer">` +
+            `เปิดแผนที่ในกูเกิลแมพ</a>`+
+          '</h3>'+
+        "</div>";
+
+      infoWindow.setContent(contentString);
       infoWindow.open(marker.getMap(), marker);
     });
   });
 }
+
+
 
 export { initMap };
